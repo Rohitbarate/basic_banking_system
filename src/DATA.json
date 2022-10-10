@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8b8"
+  },
+  "name": "rohit barate",
+  "accountno": "00000100",
+  "email": "rohit@gmail.com",
+  "accountbal": 1000
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8b9"
+  },
+  "name": "prem patil",
+  "accountno": "00000101",
+  "email": "prem@gmail.com",
+  "accountbal": 500
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8ba"
+  },
+  "name": "soham kumbhar",
+  "accountno": "00000102",
+  "email": "soham@gmail.com",
+  "accountbal": 8000
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8bb"
+  },
+  "name": "saurabh more",
+  "accountno": "00000103",
+  "email": "saurabh@gmail.com",
+  "accountbal": 10000
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8bc"
+  },
+  "name": "vinit lokhande",
+  "accountno": "00000104",
+  "email": "vinit@gmail.com",
+  "accountbal": 6500
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8bd"
+  },
+  "name": "tejas sutar",
+  "accountno": "00000105",
+  "email": "tejas@gmail.com",
+  "accountbal": 2000
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8be"
+  },
+  "name": "rushikesh bhumkar",
+  "accountno": "00000106",
+  "email": "rushikesh@gmail.com",
+  "accountbal": 2050
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8bf"
+  },
+  "name": "vaishnav vaiday",
+  "accountno": "00000107",
+  "email": "vaishnav@gmail.com",
+  "accountbal": 2000
+},{
+  "_id": {
+    "$oid": "63428599a9ddb9402442f8cb"
+  },
+  "name": "vishal jadhav",
+  "accountno": "00000108",
+  "email": "vishal@gmail.com",
+  "accountbal": 2000
+},{
+  "_id": {
+    "$oid": "63428763a9ddb9402442f8d1"
+  },
+  "name": "yogesh jadhav",
+  "accountno": "00000109",
+  "email": "yogesh@gmail.com",
+  "accountbal": 2050
+}]

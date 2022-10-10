@@ -1,0 +1,23 @@
+.trContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 80vh; */
+}
+
+.form {
+  width: 40%;
+  /* height: 70%; */
+  border: 1px solid #000;
+  padding:30px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.row{
+    margin: 20px 0;
+    position: relative;
+}

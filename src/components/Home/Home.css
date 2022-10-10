@@ -1,0 +1,12 @@
+
+.heading span{
+    font-size: 4rem;
+    color: rgb(21, 113, 199);
+    font-weight: bolder;
+    margin-left: 10px;
+
+}
+.info-lines{
+    line-height: 25px;
+    text-align: start;
+}
