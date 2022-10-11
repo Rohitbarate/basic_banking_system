@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 function CollapsibleExample() {
   const location = useLocation();
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{position:'sticky',top:0}}>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{position:'sticky',top:0,zIndex:'100'}}>
       <Container>
         <Navbar.Brand href="/">
           {" "}
