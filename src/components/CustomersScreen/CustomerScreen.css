@@ -7,9 +7,7 @@
 }
 .customerTable {
   width: 80%;
-  /* height: 76vh; */
-  /* overflow-y: scroll; */
-  background-color: aquamarine;
+  background-color: #67c9f7d2;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
@@ -55,7 +53,6 @@
 .custsData{
     height: 75vh;
     overflow-y: scroll;
-    /* margin-bottom: 20px; */
 }
 ::-webkit-scrollbar{
   display: none;

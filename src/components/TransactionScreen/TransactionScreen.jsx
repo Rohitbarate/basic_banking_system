@@ -1,5 +1,6 @@
-import React, { useState ,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import DATA from "../../DATA.json";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
@@ -13,26 +14,25 @@ const TransactionScreen = () => {
   const [sAccno, setSAccno] = useState(item ? item.accountno : "");
   const [rAccno, setRAccno] = useState("");
   const [amt, setAmt] = useState();
-  const [trHistory,setTrHistory] = useState()
+  const [trHistory, setTrHistory] = useState();
 
   useEffect(() => {
-    setTrHistory(JSON.parse(localStorage.getItem('history')))
-    console.log(trHistory);
-  }, [trHistory])
-  
+    setTrHistory(JSON.parse(localStorage.getItem("history")));
+  }, [amt,rAccno,sAccno]);
 
   function transferBtn() {
     if (!sAccno || !rAccno || !amt) {
       alert("input's should not be empty ");
     } else {
-      let historyObj;
+      if(sAccno!==rAccno)
+      {let historyObj;
       let history = localStorage.getItem("history");
 
       if (history == null) {
         historyObj = [];
       } else {
         historyObj = JSON.parse(history);
-        setTrHistory(historyObj)
+        setTrHistory(historyObj);
       }
       let myObj = {
         sAccno,
@@ -44,7 +44,11 @@ const TransactionScreen = () => {
       setAmt("");
       setRAccno("");
       setSAccno("");
-      console.log(JSON.parse(localStorage.getItem("history")));
+      
+    }else{
+        alert("Sender and Reciever account no. should not be same ");
+      }
+      
     }
   }
 
@@ -55,35 +59,33 @@ const TransactionScreen = () => {
           <div className="title">Sender</div>
           <Row className="row">
             <Col>
-              <Form.Control
-                style={{
-                  position: "relative",
-                  margin: "5px auto",
-                  width: "80%",
-                }}
+              <Form.Select
                 className="mt-2"
-                placeholder="Sender's Account No."
-                type="number"
                 value={sAccno}
+                type="number"
                 onChange={(e) => setSAccno(e.target.value)}
-              />
+              >
+                <option value="">Sender's Account No.</option>
+                 {DATA.map(({ accountno }) => {
+                  return <option value={accountno} key={accountno}>{accountno}</option>;
+                })}
+              </Form.Select>
             </Col>
           </Row>
           <div className="title">Reciever</div>
           <Row className="row">
             <Col>
-              <Form.Control
-                style={{
-                  position: "relative",
-                  margin: "5px auto",
-                  width: "80%",
-                }}
-                value={rAccno}
-                onChange={(e) => setRAccno(e.target.value)}
+              <Form.Select
                 className="mt-2"
+                value={rAccno}
                 type="number"
-                placeholder="Reciever's Account No."
-              />
+                onChange={(e) => setRAccno(e.target.value)}
+              >
+                <option value="">Reciever's Account No.</option>
+                {DATA.map(({ accountno}) => {
+                  return <option key={accountno} value={accountno}>{accountno}</option>;
+                })}
+              </Form.Select>
             </Col>
           </Row>
           <Row className="row">
@@ -121,9 +123,15 @@ const TransactionScreen = () => {
           <div className="htrAmt htrHeading">Amount (rs)</div>
         </div>
         <div className="htrDataRow">
-          {trHistory? trHistory.map((item,index)=>{
-            return <TransferRow item={item} index={index} />
-          }):<h4 className="pt-3" style={{color:'red'}}>No transaction happens</h4>}
+          {trHistory ? (
+            trHistory.map((item, index) => {
+              return <TransferRow key={index} item={item} index={index} />;
+            })
+          ) : (
+            <h4 className="pt-3" style={{ color: "red" }}>
+              No transaction happens
+            </h4>
+          )}
         </div>
       </div>
     </div>

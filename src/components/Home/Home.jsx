@@ -36,6 +36,7 @@ const Home = () => {
           <Link to="/transactions" className="nav-link ">transfer money</Link>
         </Button>
       </div>
+        
     </div>
   );
 };
