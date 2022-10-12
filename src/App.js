@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
+      <Routes basename='/basic_banking_system'>
         <Route path='/' element={<Home/>}  />
         <Route path='/customers' element={<CustomeersScreen/>}/>
         <Route path='/transactions' element={<TransactionScreen/>}/>
