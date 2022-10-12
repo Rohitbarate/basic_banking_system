@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Router>
+  <Router basename='/basic_banking_system'>
     <App />
   </Router>
 );
