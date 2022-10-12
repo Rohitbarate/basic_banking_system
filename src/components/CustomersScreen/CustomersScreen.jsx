@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CustomerRow from "../CustomerRow/CustomerRow";
 import "./CustomerScreen.css";
 import customerData from "../../DATA.json";
