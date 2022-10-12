@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7de59019.css",
-    "main.js": "/static/js/main.5d9cc361.js",
-    "static/js/787.625dfc89.chunk.js": "/static/js/787.625dfc89.chunk.js",
-    "index.html": "/index.html",
-    "main.7de59019.css.map": "/static/css/main.7de59019.css.map",
-    "main.5d9cc361.js.map": "/static/js/main.5d9cc361.js.map",
-    "787.625dfc89.chunk.js.map": "/static/js/787.625dfc89.chunk.js.map"
+    "main.css": "/basic_banking_system/static/css/main.7de59019.css",
+    "main.js": "/basic_banking_system/static/js/main.a5c51b5b.js",
+    "static/js/787.625dfc89.chunk.js": "/basic_banking_system/static/js/787.625dfc89.chunk.js",
+    "index.html": "/basic_banking_system/index.html",
+    "main.7de59019.css.map": "/basic_banking_system/static/css/main.7de59019.css.map",
+    "main.a5c51b5b.js.map": "/basic_banking_system/static/js/main.a5c51b5b.js.map",
+    "787.625dfc89.chunk.js.map": "/basic_banking_system/static/js/787.625dfc89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7de59019.css",
-    "static/js/main.5d9cc361.js"
+    "static/js/main.a5c51b5b.js"
   ]
 }
