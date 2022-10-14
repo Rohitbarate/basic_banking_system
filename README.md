@@ -1,5 +1,4 @@
-# link
-https://rohitbarate.github.io/basic_banking_system
+link of website https://rohitbarate.github.io/basic_banking_system
 
 # Home Screen 
 
